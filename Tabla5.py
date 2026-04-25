@@ -2,7 +2,7 @@ import plotly.express as px
 from Tablas import Tablas
 
 
-class Tabla2(Tablas):
+class Tabla5(Tablas):
     def __init__(self, df):
         
         super().__init__(df, "¿Dormir más mejora el rendimiento?")
