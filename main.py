@@ -1,6 +1,7 @@
 from DataFrame import DataFrame
 from Menu import Menu
 from Tabla1 import Tabla1
+from Tabla4 import Tabla4
 from Tabla5 import Tabla5
 
 
@@ -9,6 +10,7 @@ def main():
     df = df_object.getdf()
     menu = Menu()
     menu.add_option(Tabla1(df))
+    menu.add_option(Tabla4(df))
     menu.add_option(Tabla5(df))
     menu.print_options()
     opcion = int(input("Escoje una opcion: "))
