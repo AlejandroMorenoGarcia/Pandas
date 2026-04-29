@@ -40,7 +40,7 @@ class Tabla2(Tablas):
             line=dict(
                 color="white",
                 width=2,
-                dash="dash"  
+                dash="dash"
             )
         )
 

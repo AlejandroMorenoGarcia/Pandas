@@ -31,6 +31,15 @@ class Tabla1(Tablas):
             size_max=30
         )
 
+        fig.update_layout(
+            xaxis_title="Nivel Socioeconómico",
+            yaxis_title="Nota Media del Examen",
+            title=self.titulo,
+            scene=dict(
+                aspectmode="cube",
+            )
+        )
+
         fig.update_traces(marker=dict(
             line=dict(
                 width=0,
