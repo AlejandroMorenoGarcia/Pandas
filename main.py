@@ -1,6 +1,10 @@
 from DataFrame import DataFrame
 from Menu import Menu
-from Tablas import Tabla1,Tabla2,Tabla3,Tabla4,Tabla5
+from Tabla1 import Tabla1
+from Tabla2 import Tabla2
+from Tabla3 import Tabla3
+from Tabla4 import Tabla4
+from Tabla5 import Tabla5
 
 
 def main():

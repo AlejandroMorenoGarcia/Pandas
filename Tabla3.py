@@ -4,12 +4,11 @@ from Tablas import Tablas
 class Tabla3(Tablas):
     #Constructo de la clase
     def __init__(self, df):
-        super().__init__(df, "Relación entre nivel socioeconómico y notas (media)")
+        super().__init__(df, "¿Existe relación entre nivel socioeconómico y notas?")
 
     
     #Función principal que agrupa los datos, crea el gráfico y muestra las figura
     def getTabla(self):
-        
         #Función que agrupa
         df_grouped = self.df.groupby("Family_Income", as_index=False)["Exam_Score"].mean() #Función Media
 
@@ -37,7 +36,7 @@ class Tabla3(Tablas):
             xaxis_title="Nivel Socioeconómico",
             yaxis_title="Nota Media del Examen",
             title=self.titulo,
-            yaxis_range=[66, 68]
+            yaxis_range=[68, 70]
         )
 
         fig.show()
