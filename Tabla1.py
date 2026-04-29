@@ -32,9 +32,6 @@ class Tabla1(Tablas):
         )
 
         fig.update_layout(
-            xaxis_title="Nivel Socioeconómico",
-            yaxis_title="Nota Media del Examen",
-            title=self.titulo,
             scene=dict(
                 aspectmode="cube",
             )
