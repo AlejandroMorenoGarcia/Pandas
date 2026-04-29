@@ -28,4 +28,5 @@ class Tabla4(Tablas):
             template="plotly_dark"
         )
 
+        fig.update_yaxes(range=[68, 69.5])
         fig.show()
