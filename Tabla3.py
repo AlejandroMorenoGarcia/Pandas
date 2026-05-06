@@ -1,17 +1,22 @@
 import plotly.express as px
 from Tablas import Tablas
 
+#Gráfico del database sobre el nivel estudios en el contexto socioeconómico.
 class Tabla3(Tablas):
+   
     #Constructo de la clase
     def __init__(self, df):
         super().__init__(df, "¿Existe relación entre nivel socioeconómico y notas?")
 
-    
     #Función principal que agrupa los datos, crea el gráfico y muestra las figura
     def getTabla(self):
-        #Función que agrupa
+        """
+            Esta función hace todo el proceso de análisis y visualización de datos en un solo bloque. Toma un DataFrame con datos
+            de estudiantes, calcula la nota media según el nivel socioeconómico. Crea un gráfico de barras, lo personaliza y lo muestra.
+        """
         df_grouped = self.df.groupby("Family_Income", as_index=False)["Exam_Score"].mean() #Función Media
 
+        #Crea un gráfico de barras con Plotly Express
         fig = px.bar(
             df_grouped,
             x="Family_Income",
@@ -32,6 +37,7 @@ class Tabla3(Tablas):
 
         fig.update_traces(texttemplate='%{text:.2f}', textposition='outside')
 
+        #Ajusta el diseño general del gráfico
         fig.update_layout(
             xaxis_title="Nivel Socioeconómico",
             yaxis_title="Nota Media del Examen",
@@ -39,4 +45,22 @@ class Tabla3(Tablas):
             yaxis_range=[68, 70]
         )
 
+        # Muestra el gráfico en pantalla
         fig.show()
+
+    
+    #Función que hace de Test
+    def test_calculo_media(self):
+        """
+            Esta función verifica que el cálculo de la media por nivel socioeconómico es correcta.
+        """
+        #Agrupo los datos
+        df_grouped = self.df.groupby("Family_Income", as_index=False)["Exam_Score"].mean()
+
+        # Comprobamos que hay datos
+        assert len(df_grouped) > 0
+
+        # Comprobamos valores concretos
+        for _, row in df_grouped.iterrows():
+            assert row["Exam_Score"] >= 0
+            assert row["Exam_Score"] <= 100  # suponiendo notas de 0 a 100
