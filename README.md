@@ -1,4 +1,4 @@
-# 📊 Librería de Análisis de Datos con Pandas
+# 📊 Librería de Análisis del Rendimiento Estudiantil con Pandas
 
 ## 📌 Descripción
 
@@ -64,13 +64,15 @@ git clone https://github.com/tu-usuario/tu-repositorio.git
 2. Accede al directorio del proyecto:
 
 ```
-cd Pandas
+cd Pandas/Libreria
 ```
 
 3. Instala las dependencias necesarias:
 
 ```
 pip install pandas
+pip install plotly
+pip install statsmodel
 ```
 
 ---
@@ -80,7 +82,7 @@ pip install pandas
 Ejecuta el archivo principal:
 
 ```
-python3 Libreria/main.py
+python3 main.py
 ```
 
 El programa procesará los datos y generará diferentes tablas en función de las preguntas definidas en el código.
@@ -91,9 +93,11 @@ El programa procesará los datos y generará diferentes tablas en función de la
 
 Algunas de las preguntas que se pueden responder con esta librería:
 
-* ¿Cómo influye el tiempo de estudio en el rendimiento académico?
-* ¿Existe relación entre asistencia y notas?
-* ¿Qué factores afectan más al rendimiento de los estudiantes?
+* ¿Influye la asistencia y las horas de estudio en las notas?
+* ¿Cómo afecta la calidad del profesor a la mejora de las notas?
+* ¿Existe relación entre nivel socioeconómico y notas?
+* ¿El acceso a recursos e internet marca diferencias relevantes?
+* ¿Dormir más mejora significativamente el rendimiento?tes?
 
 ---
 
@@ -110,16 +114,6 @@ La librería genera tablas que permiten:
 ## 🚧 Estado del proyecto
 
 En desarrollo. Se pueden añadir nuevas preguntas y funcionalidades para ampliar el análisis.
-
----
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Puedes:
-
-* Reportar errores
-* Proponer mejoras
-* Añadir nuevas funcionalidades
 
 ---
 
