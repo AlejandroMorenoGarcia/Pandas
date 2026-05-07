@@ -10,10 +10,21 @@ class Tabla3(Tablas):
 
     #Función principal que agrupa los datos, crea el gráfico y muestra las figura
     def getTabla(self):
+        
         """
-            Esta función hace todo el proceso de análisis y visualización de datos en un solo bloque. Toma un DataFrame con datos
-            de estudiantes, calcula la nota media según el nivel socioeconómico. Crea un gráfico de barras, lo personaliza y lo muestra.
+        Realiza el análisis y la visualización de los datos académicos.
+
+        Esta función agrupa los datos del DataFrame según el nivel de ingresos familiares
+        y calcula la nota media (`Exam_Score`) de cada grupo. Posteriormente, los resultados pueden utilizarse para generar un gráfico
+        de barras y mostrar la información de forma visual.
+
+        Args:
+        self: instancia de la clase que contiene el DataFrame (df)
+
+        Returns:
+        DataFrame: tabla agrupada con la media de notas por nivel de ingresos
         """
+
         df_grouped = self.df.groupby("Family_Income", as_index=False)["Exam_Score"].mean() #Función Media
 
         #Crea un gráfico de barras con Plotly Express
