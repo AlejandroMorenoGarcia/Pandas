@@ -1,8 +1,21 @@
+from pathlib import Path
 import pandas as pd
 
+"""
+    
+"""
 class DataFrame:
     def __init__(self):
-        self.df = pd.read_csv("../CSVs/StudentPerformanceFactors_realistic.csv")
+        # Carpeta donde está este archivo .py
+        base_path = Path(__file__).resolve().parent
+        
+        # Ruta al CSV
+        csv_path = base_path / "../CSVs/StudentPerformanceFactors_realistic.csv"
+        
+        # Normaliza la ruta
+        csv_path = csv_path.resolve()
+
+        self.df = pd.read_csv(csv_path)
         
     def getdf(self):
         return self.df

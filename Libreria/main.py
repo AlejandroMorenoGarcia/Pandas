@@ -1,10 +1,10 @@
 from DataFrame import DataFrame
 from Menu import Menu
-from Tabla1 import Tabla1
-from Tabla2 import Tabla2
-from Tabla3 import Tabla3
-from Tabla4 import Tabla4
-from Tabla5 import Tabla5
+from GrupoTablas.Tabla1 import Tabla1
+from GrupoTablas.Tabla2 import Tabla2
+from GrupoTablas.Tabla3 import Tabla3
+from GrupoTablas.Tabla4 import Tabla4
+from GrupoTablas.Tabla5 import Tabla5
 
 
 def main():

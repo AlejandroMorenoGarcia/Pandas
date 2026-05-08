@@ -1,5 +1,5 @@
 import plotly.express as px
-from Tablas import Tablas
+from GrupoTablas.Tablas import Tablas
 
 # Grafivo sobre la importancia de los profesores en la mejora de las notas
 class Tabla2(Tablas):
