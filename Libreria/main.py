@@ -6,6 +6,11 @@ from GrupoTablas.Tabla3 import Tabla3
 from GrupoTablas.Tabla4 import Tabla4
 from GrupoTablas.Tabla5 import Tabla5
 
+"""
+Clase principal del código.
+    
+"""
+
 
 def main():
     df_object = DataFrame()
