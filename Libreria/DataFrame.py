@@ -2,6 +2,7 @@ from pathlib import Path
 import pandas as pd
 
 """
+Clase para generar el Dataframe principal de nuestro código.
     
 """
 class DataFrame:
