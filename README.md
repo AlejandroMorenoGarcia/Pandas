@@ -43,6 +43,12 @@ StudentsPerformance/
 │   └── GrupoTablas/
 │       ├── Tablas.py     # Clase base
 │       └── Tabla1.py … Tabla5.py
+├── Tests/
+│   ├── conftest.py
+│   ├── test_dataframe_load.py
+│   ├── test_main_entrada.py
+│   ├── test_menu.py
+│   └── test_tablas_smoke.py
 └── README.md
 ```
 
@@ -93,6 +99,23 @@ El programa muestra un menú numerado. Introduce el número de la opción desead
 | 4 | ¿Dormir más mejora el rendimiento? (violin plot) |
 
 Las figuras se abren en el navegador por defecto de Plotly.
+
+---
+
+## ✅ Tests
+
+Para ejecutar los tests:
+
+```bash
+pip install pytest
+python -m pytest Tests -v
+```
+
+Notas:
+
+- Los tests están en la carpeta `Tests/`.
+- `conftest.py` añade `Libreria` al `sys.path` para no tocar el código fuente.
+- Hay pruebas de comportamiento actual y pruebas de comportamiento ideal del menú/entrada.
 
 ---
 
