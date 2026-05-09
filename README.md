@@ -158,6 +158,5 @@ Este proyecto se distribuye bajo licencia MIT.
 - Alejandro Moreno García
 - Iván Fernández Saura
 - Axel Abel Torres Valdez
-- Andrei Danaila Cinco
 
 ---
