@@ -36,7 +36,7 @@ def test_menu_indices_invalidos_lanzan_index_error(df_loaded):
         menu.get_option(1)
 
 
-@pytest.mark.parametrize("indice_valido", [0, 4])
+@pytest.mark.parametrize("indice_valido", [0, 4])  # índices base-0: primera y última tabla
 def test_menu_limites_validos_con_cinco_opciones(df_loaded, indice_valido):
     menu = _menu_con_cinco_tablas(df_loaded)
     menu.get_option(indice_valido)
@@ -69,22 +69,14 @@ def _menu_con_cinco_tablas(df_loaded):
     return menu
 
 
-@pytest.mark.parametrize(
-    "indice_fuera_de_rango",
-    [
-        -1,
-        5,
-        10,
-        999,
-    ],
-)
-def test_menu_cinco_opciones_indice_fuera_de_rango_lanza_index_error(
-    df_loaded, indice_fuera_de_rango
-):
+def test_menu_cinco_opciones_indice_fuera_de_rango_lanza_index_error(df_loaded):
+    """El límite superior se deriva del tamaño real del menú, sin hardcodear."""
     menu = _menu_con_cinco_tablas(df_loaded)
-
-    with pytest.raises(IndexError):
-        menu.get_option(indice_fuera_de_rango)
+    n = len(menu.tablas)
+    fuera_de_rango = [-1, n, n + 5, 999]
+    for indice in fuera_de_rango:
+        with pytest.raises(IndexError):
+            menu.get_option(indice)
 
 
 @pytest.mark.parametrize("indice_invalido", ["2", None, 2.5])

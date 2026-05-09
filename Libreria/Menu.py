@@ -15,8 +15,12 @@ class Menu:
     # Funcion para mostrar las tablas
     def print_options(self):
         for x in range(len(self.tablas)):
-            print("{} - {}".format(x,self.tablas[x].getTitulo()))
+            print("{} - {}".format(x + 1,self.tablas[x].getTitulo()))
 
     # Funcion para escojer la tabla y mostrarla
     def get_option(self, option):
+        if not isinstance(option, int) or isinstance(option, bool):
+            raise TypeError
+        if option < 0 or option >= len(self.tablas):
+            raise IndexError
         self.tablas[option].getTabla()
