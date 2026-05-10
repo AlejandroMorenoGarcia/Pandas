@@ -22,7 +22,9 @@ Los datos se cargan desde CSV mediante **Pandas**; cada opción del menú corres
 - Python 3
 - Pandas
 - Plotly Express
-- Statsmodels (necesario para la línea de tendencia LOWESS en una de las gráficas)
+- Statsmodels
+- Pytest
+- Pathlib
 
 ---
 
