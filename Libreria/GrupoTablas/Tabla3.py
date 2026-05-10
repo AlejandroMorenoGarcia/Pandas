@@ -1,5 +1,5 @@
 import plotly.express as px
-from Tablas import Tablas
+from GrupoTablas.Tablas import Tablas
 
 #Gráfico del database sobre el nivel estudios en el contexto socioeconómico.
 class Tabla3(Tablas):

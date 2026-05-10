@@ -1,5 +1,5 @@
 import plotly.express as px
-from Tablas import Tablas
+from GrupoTablas.Tablas import Tablas
 
 class Tabla4(Tablas):
     def __init__(self, df):

@@ -1,5 +1,5 @@
 import plotly.express as px
-from Tablas import Tablas
+from GrupoTablas.Tablas import Tablas
 
 # Grafico sobre la influencia de la asistencia y las horas de estudio en las notas
 class Tabla1(Tablas):
