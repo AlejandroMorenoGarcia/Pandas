@@ -104,11 +104,11 @@ El programa muestra un menú numerado. Introduce el número de la opción desead
 
 | Opción | Pregunta / tema |
 |--------|------------------|
-| 0 | ¿Influye la asistencia y las horas de estudio en las notas? (scatter 3D) |
-| 1 | ¿Cómo afecta la calidad del profesor a la mejora de las notas? (scatter con tendencia) |
-| 2 | ¿Existe relación entre nivel socioeconómico y notas? (barras) |
-| 3 | ¿El acceso a recursos e internet marca diferencias relevantes? (tabla en consola + barras) |
-| 4 | ¿Dormir más mejora el rendimiento? (violin plot) |
+| 1 | ¿Influye la asistencia y las horas de estudio en las notas? (scatter 3D) |
+| 2 | ¿Cómo afecta la calidad del profesor a la mejora de las notas? (scatter con tendencia) |
+| 3 | ¿Existe relación entre nivel socioeconómico y notas? (barras) |
+| 4 | ¿El acceso a recursos e internet marca diferencias relevantes? (tabla en consola + barras) |
+| 5 | ¿Dormir más mejora el rendimiento? (violin plot) |
 
 Las figuras se abren en el navegador por defecto de Plotly.
 
