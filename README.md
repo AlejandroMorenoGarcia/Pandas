@@ -35,15 +35,15 @@ StudentsPerformance/
 │   └── StudentPerformanceFactors_realistic.csv   
 ├── Documentacion/
 │   ├── Documentacion Código/
-│       ├── DocumentacionTabla1.html … DocumentacionTabla4.html
-│       ├── DocumentacionTablas.html
-│       ├── DocumentacionDataframe.html
-│       ├── DocumentacionMain.html
-│       └── DocumentacionMenu.html
+│   │   ├── DocumentacionTabla1.html … DocumentacionTabla4.html
+│   │   ├── DocumentacionTablas.html
+│   │   ├── DocumentacionDataframe.html
+│   │   ├── DocumentacionMain.html
+│   │   └── DocumentacionMenu.html
 │   ├── Informe de análisis del dataset/
-│       └── Informe de análisis del dataset Alejandro,Axel e Iván.pdf
+│   │   └── Informe de análisis del dataset Alejandro,Axel e Iván.pdf
 │   ├── Informe sobre librerias/
-│       └── Informe sobre librerias Alejandro,Axel e Iván.pdf
+│   │   └── Informe sobre librerias Alejandro,Axel e Iván.pdf
 │   └── Reflexión Individual y Conjunta/
 │       ├── Reflexión Conjunta Alejandro,Axel e Iván.pdf
 │       └── Reflexión Individual Alejandro.pdf
